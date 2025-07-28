@@ -6,14 +6,22 @@ Analyzed a multi-company marketing campaign dataset to evaluate campaign perform
 - **Keywords:** marketing analytics, campaign performance, customer segmentation, channel analysis, SQL insights, ROI optimization
 
 ## Business Question
-How can individual companies optimize their marketing campaigns to improve customer engagement and conversion, based on their unique customer and campaign performance data?
+How can individual companies optimize their marketing campaigns to improve customer engagement and conversion?
 
-## Suporting Questions
+### Suporting Questions
 - What is the average campaign performance for each company?
 - Which companies have the highest campaign performance overall?
-- What are the characteristics of top-performing campaigns[^1]?
+- What are the characteristics of top-performing campaigns?
 - Which customer segments respond best to each campaign type and channel?
 - Which marketing channels are driving the most conversions?
+
+## Executive Summary
+- Average performance across all companies is tightly aligned
+- Top-performing campaigns target younger audiences via high-engagement channels like Instagram, Email, and YouTube
+- Customer segments like Fashionistas and Outdoor Adventurers respond especially well to Email and Influencer campaigns
+- ROI improves significantly when channel, segment, and message are well-aligned
+
+[View on Tableau Public](
 
 ## Key Insights
 ### 1. Cross Company Average Campaign Performance
@@ -40,25 +48,20 @@ This suggests that while all companies are running efficient campaigns, small ad
 | 46603       | NexGen Systems     | 15%             | 10         | 7.99 | \$17,186 | \$137,316 |
 | 45126       | TechCorp           | 15%             | 10         | 7.97 | \$14,736 | \$117,740 |
 | 92405       | NexGen Systems     | 15%             | 10         | 7.98 | \$7,150  | \$57,057  |
-| 4568        |	DataTech Solutions | 15%             | 10         |	7.97 | \$8,698  |	\$69,323  |
+| 4568        |	DataTech Solutions | 15%             | 10         |	7.97 | \$8,698  | \$69,323  |
 
-TechCorp and NexGen Systems lead in individual campaign performance, achieving the maximum engagement score *(10/10)*, high conversion rates *(15%)*, and ROI near 8×, translating into returns exceeding $100,000 per campaign.
-
-DataTech Solutions also performs strongly, with campaigns generating returns between $69K and $147K, while Alpha Innovations lands in the competitive range with returns around $110K.
-
-Innovate Industries did not have any campaigns appear in the top 5, indicating potential room for improvement.
+**TechCorp** and **NexGen Systems** lead in individual campaign performance, achieving the maximum engagement score *(10/10)*, high conversion rates *(15%)*, and ROI near 8×, translating into returns exceeding $100,000 per campaign.
 
 ### 3. Traits of the Highest-Performing Campaigns
-| Campaign ID | Campaign Type  | Channel    | Customer Segment    | Target Audience |
-| ----------- | -------------- | ---------- | ------------------- | --------------- |
-| 157449      |	Social Media   |	Facebook	| Fashionistas	      | Men 18-24       |
-| 46603	      | Email          |	Email	    | Outdoor Adventurers	| Men 18-24       |
-| 45126	      | Search         |	Instagram	| Foodies	            | Women 25-34     |
-| 92405	      | Email	         |  Email	    | Foodies	            | All Ages        |
-| 4568	      | Display	       |  Instagram	| Fashionistas	      | Men 18-24       |
+| Campaign ID | Campaign Type  | Channel   | Customer Segment      | Target Audience  |
+|-------------|----------------|-----------|-----------------------|------------------|
+| 157449      | Social Media   | Facebook  | Fashionistas          | Men 18-24        |
+| 46603       | Email          | Email     | Outdoor Adventurers   | Men 18-24        |
+| 45126       | Search         | Instagram | Foodies               | Women 25-34      |
+| 92405       | Email          | Email     | Foodies               | All Ages         |
+| 4568        | Display        | Instagram | Fashionistas          | Men 18-24        |
 
 Top-performing campaigns share common traits across targeting and delivery strategy:
-
 - **Target Audience:** Most campaigns focus on younger demographics, particularly Men aged 18–24
 - **Customer Segments:** High-performing segments include Fashionistas, Foodies, Tech Enthusiasts, and Outdoor Adventurers
 - **Channels Used:** Platforms like Facebook, Instagram, and Email consistently appear in high-return campaigns
@@ -79,7 +82,7 @@ While conversion rates across channels are closely aligned, **Google Ads** stand
 
 Channels like Instagram and YouTube also deliver strong engagement and conversions, proving highly effective depending on company and segment fit.
 
-| Company              | Channel     | Avg. Engagement Score | Avg. Conversion Rate |
+| Company              | Channel     | Avg. Engagement Score  | Avg. Conversion Rate  |
 |----------------------|-------------|------------------------|-----------------------|
 | Alpha Innovations    | Instagram   | 8.02                   | 11.38%                |
 | NexGen Systems       | Google Ads  | 7.94                   | 11.33%                |
@@ -110,14 +113,13 @@ Channels like Instagram and YouTube also deliver strong engagement and conversio
 | Alpha Innovations   | Influencer     | Instagram   | Tech Enthusiasts      | Women 35-44      | 8.25                   | 13%                   |
 
 The highest-performing campaign combinations are those that precisely align message, audience, and channel. For example:
-
 - Outdoor Adventurers (Men 18–24) respond especially well to Social Media on Website and Influencer campaigns on Website
 - Tech Enthusiasts and Fashionistas (Women 35–44) show high engagement with Email and Instagram, especially when paired with Influencer or Display campaigns
-- The best conversion rate overall (13.67%) was achieved by DataTech Solutions through a Display campaign on YouTube targeting Tech Enthusiasts
+- The best conversion rate overall *(13.67%)* was achieved by DataTech Solutions through a Display campaign on YouTube targeting Tech Enthusiasts
 
 This highlights the value of audience segmentation and channel-audience matching as key levers for campaign performance.
 
-## Recommendations
+## Recommendations by Company
 - **TechCorp**
     - Prioritize Facebook, Instagram, and Email, especially for Search campaigns.
     - Expand successful strategies to new segments while maintaining core audiences.
@@ -138,20 +140,17 @@ This highlights the value of audience segmentation and channel-audience matching
     - Optimize Email and Instagram with better targeting and creative updates.
     - Test new high-potential segments like Tech Enthusiasts or Outdoor Adventurers.
 
-## Business Value
-This analysis enables teams to:
-- Benchmark performance across companies
-- Target high-response segments with precision
-- Choose the most effective channels
-- Improve ROI by reallocating underperforming spend
-
-## Tools and Skills Used
+### Tools and Skills Used
 - SQL (MySQL): Filtering, grouping, and comparative analysis
 - Excel/CSV: Preprocessing and exploratory analysis
+- Tableau: Visual summaries and interactivity
 
-## Folder Structure
+### Folder Structure
 - [data](data): Original and cleaned datasets
 - [sql](sql): Queries used in analysis
 - [results](results): CSV result tables from analysis
 
-[^1]: ≥7.5% conversion and ≥6 engagement, indicating effectiveness in both interest and action.
+### Methodology
+- Cleaned data using SQL (e.g., NULL removal, conversions to numeric)  
+- Calculated averages by grouping by company, channel, etc.  
+- Flagged top campaigns using thresholds: ≥7.5% conversion and ≥6 engagement   
