@@ -21,8 +21,6 @@ How can individual companies optimize their marketing campaigns to improve custo
 - Customer segments like Fashionistas and Outdoor Adventurers respond especially well to Email and Influencer campaigns
 - ROI improves significantly when channel, segment, and message are well-aligned
 
-[View on Tableau Public](
-
 ## Key Insights
 ### 1. Cross Company Average Campaign Performance
 | Company             | Engagement Score | Conversion Rate | ROI  | Acquisition Cost | Estimated Return |
@@ -143,12 +141,10 @@ This highlights the value of audience segmentation and channel-audience matching
 ### Tools and Skills Used
 - SQL (MySQL): Filtering, grouping, and comparative analysis
 - Excel/CSV: Preprocessing and exploratory analysis
-- Tableau: Visual summaries and interactivity
 
 ### Folder Structure
 - [data](data): Original and cleaned datasets
 - [sql](sql): Queries used in analysis
-- [results](results): CSV result tables from analysis
 
 ### Methodology
 - Cleaned data using SQL (e.g., NULL removal, conversions to numeric)  
