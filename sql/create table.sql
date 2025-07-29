@@ -1,55 +1,58 @@
+-- Creates the base table structure for the marketing campaign dataset.
+-- This schema is used to load, clean, and analyze campaign data across companies.
+
 CREATE TABLE dataset (
 	campaign_id INT PRIMARY KEY,
-    company ENUM(
+    	company ENUM(
         'Alpha Innovations',
         'DataTech Solutions',
         'Innovate Industries',
         'NexGen Systems',
         'TechCorp'),
 	campaign_type ENUM(
-		'Display',
+	'Display',
         'Email',
         'Influencer',
         'Search',
         'Social Media'),
 	target_audience ENUM(
-		'All Ages',
+	'All Ages',
         'Men 18-24',
         'Men 25-3',
         'Women 25-34',
         'Women 35-44'),
-    duration ENUM(
-		'15 days',
+    	duration ENUM(
+	'15 days',
         '30 days',
         '45 days',
         '60 days'),
 	channel_used ENUM(
-		'Email',
+	'Email',
         'Facebook',
         'Google Ads',
         'Instagram',
         'Website',
         'YouTube'),
 	conversion_rate FLOAT,
-    acquisition_cost DECIMAL(10, 2),
-    roi FLOAT,
-    location ENUM(
-		'Chicago',
+    	acquisition_cost DECIMAL(10, 2),
+    	roi FLOAT,
+   	location ENUM(
+	'Chicago',
         'Houston',
         'Los Angeles',
-       'Miami',
+        'Miami',
         'New York'),
 	language ENUM(
-		'English',
+	'English',
         'French',
         'German',
         'Mandarin',
         'Spanish'),
 	clicks INT,
 	impressions INT,
-    engagement_score INT CHECK (engagement_score BETWEEN 1 AND 10),
-    customer_segment ENUM(
-		'Fashionistas',
+   	engagement_score INT CHECK (engagement_score BETWEEN 1 AND 10),
+    	customer_segment ENUM(
+	'Fashionistas',
         'Foodies',
         'Health & Wellness',
         'Outdoor Adventurers',
