@@ -1,3 +1,7 @@
+-- Extracts characteristics (channel, campaign type, target audience, customer segment) 
+-- of the top 5 highest-performing campaigns.
+-- Used to determine patterns in targeting and strategy that correlate with success.
+
 SELECT 
 	campaign_type,
 	channel_used,
