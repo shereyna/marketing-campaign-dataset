@@ -1,3 +1,6 @@
+-- Calculates average engagement score and conversion rate by marketing channel.
+-- Identifies which channels (e.g., Instagram, Google Ads, Email) drive the best results overall.
+
 SELECT 
 	channel_used,
 	ROUND((AVG(engagement_score)), 2) AS avg_engagement,
