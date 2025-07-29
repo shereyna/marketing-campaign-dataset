@@ -1,3 +1,6 @@
+-- Selects the top 5 highest-performing campaigns based on ROI, engagement, and conversion rate.
+-- Used to identify campaign characteristics that lead to outsized marketing returns.
+
 SELECT 
 	campaign_id,
 	company,
