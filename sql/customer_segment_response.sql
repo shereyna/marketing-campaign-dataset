@@ -1,3 +1,6 @@
+-- Analyzes average engagement and conversion rate by campaign type, channel, customer segment, and target audience.
+-- Identifies which customer segments respond best to different marketing strategies.
+
 SELECT
 	campaign_type,
 	channel_used,
