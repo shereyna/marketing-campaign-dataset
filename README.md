@@ -29,7 +29,7 @@ How can individual companies optimize their marketing campaigns to improve custo
 | DataTech Solutions  | 5.50             | 8.00%           | 5.01 | \$12,503.28      | \$62,585.61      |
 | Innovate Industries | 5.51             | 8.04%           | 5.00 | \$12,500.54      | \$62,529.87      |
 | NexGen Systems      | 5.49             | 7.97%           | 4.99 | \$12,495.22      | \$62,368.07      |
-| TechCorp            | 5.48             | 8.02%           | 5.01 | \$12,509.26      | \$62,635.67      |
+| TechCorp            | 5.48             | 8.02%           | 5.01 | \$12,509.26      | \$62,635.67      | 
 
 All five companies show nearly identical average performance:
 - Engagement scores hover around 5.5 *(on a scale of 10)*
@@ -37,7 +37,7 @@ All five companies show nearly identical average performance:
 - ROI averages just above 5×
 - On average, each campaign returns about $62k.
 
-This suggests that while all companies are running efficient campaigns, small adjustments, like fine-tuning audience targeting or choosing more effective channels, could yield meaningful improvements in performance.
+This suggests that while all companies are running efficient campaigns, small adjustments, like fine-tuning audience targeting or choosing more effective channels, could yield meaningful improvements in performance. <sub>[View SQL](sql/cross_company_avg_performance.sql)</sub>
 
 ### 2. Highest-Performing Campaigns
 | Campaign ID | Company            | Conversion Rate | Engagement | ROI  | Cost     | Return    |
@@ -48,7 +48,7 @@ This suggests that while all companies are running efficient campaigns, small ad
 | 92405       | NexGen Systems     | 15%             | 10         | 7.98 | \$7,150  | \$57,057  |
 | 4568        |	DataTech Solutions | 15%             | 10         |	7.97 | \$8,698  | \$69,323  |
 
-**TechCorp** and **NexGen Systems** lead in individual campaign performance, achieving the maximum engagement score *(10/10)*, high conversion rates *(15%)*, and ROI near 8×, translating into returns exceeding $100,000 per campaign.
+**TechCorp** and **NexGen Systems** lead in individual campaign performance, achieving the maximum engagement score *(10/10)*, high conversion rates *(15%)*, and ROI near 8×, translating into returns exceeding $100,000 per campaign. <sub>[View SQL](sql/highest_performing_campaigns.sql)</sub>
 
 ### 3. Traits of the Highest-Performing Campaigns
 | Campaign ID | Campaign Type  | Channel   | Customer Segment      | Target Audience  |
@@ -65,7 +65,7 @@ Top-performing campaigns share common traits across targeting and delivery strat
 - **Channels Used:** Platforms like Facebook, Instagram, and Email consistently appear in high-return campaigns
 - **Campaign Types:** Success is spread across Search, Email, Display, and Social Media, showing that channel-audience alignment is more critical than campaign type alone
 
-These patterns suggest that the highest ROI comes from precision targeting paired with relevant, high-engagement channels.
+These patterns suggest that the highest ROI comes from precision targeting paired with relevant, high-engagement channels. <sub>[View SQL](sql/traits_hpc.sql)</sub>
 
 ### 4. Top Marketing Channels Based on Conversions
 | Channel    | Avg. Engagement | Avg. Conversion |
@@ -78,7 +78,7 @@ These patterns suggest that the highest ROI comes from precision targeting paire
 
 While conversion rates across channels are closely aligned, **Google Ads** stands out slightly as the top-performing channel overall, with an average conversion rate of 11.28%. 
 
-Channels like Instagram and YouTube also deliver strong engagement and conversions, proving highly effective depending on company and segment fit.
+Channels like Instagram and YouTube also deliver strong engagement and conversions, proving highly effective depending on company and segment fit. <sub>[View SQL](sql/top_channels.sql)</sub>
 
 | Company              | Channel     | Avg. Engagement Score  | Avg. Conversion Rate  |
 |----------------------|-------------|------------------------|-----------------------|
@@ -92,6 +92,7 @@ Channels like Instagram and YouTube also deliver strong engagement and conversio
 - **NexGen Systems & TechCorp:** Google Ads consistently performs best
 - **DataTech Solutions:** YouTube yields both strong engagement and conversions
 - **Innovate Industries:** Instagram leads in performance
+<sub>[View SQL](sql/top_channels_by_company.sql)</sub>
 
 ### 5. Customer Segment Response
 | Campaign Type | Channel     | Customer Segment     | Target Audience | Avg. Engagement Score | Avg. Conversion Rate |
@@ -112,10 +113,10 @@ Channels like Instagram and YouTube also deliver strong engagement and conversio
 
 The highest-performing campaign combinations are those that precisely align message, audience, and channel. For example:
 - Outdoor Adventurers (Men 18–24) respond especially well to Social Media on Website and Influencer campaigns on Website
-- Tech Enthusiasts and Fashionistas (Women 35–44) show high engagement with Email and Instagram, especially when paired with Influencer or Display campaigns
+- Tech Enthusiasts and Fashionistas (Women 35–44) show high engagement with Email and Instagram, especially when paired with Influencer or Display campaigns <sub>[View SQL](sql/customer_segment_response.sql)</sub>
 - The best conversion rate overall *(13.67%)* was achieved by DataTech Solutions through a Display campaign on YouTube targeting Tech Enthusiasts
 
-This highlights the value of audience segmentation and channel-audience matching as key levers for campaign performance.
+This highlights the value of audience segmentation and channel-audience matching as key levers for campaign performance. <sub>[View SQL](sql/customer_segment_response_by_company.sql)</sub>
 
 ## Recommendations by Company
 - **TechCorp**
