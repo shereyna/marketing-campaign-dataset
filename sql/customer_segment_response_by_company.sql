@@ -1,3 +1,7 @@
+-- Similar to customer_segment_response.sql, but segmented by company.
+-- Allows comparison of customer segment responses across companies and strategies.
+-- Useful for tailoring targeting strategies on a per-company basis.
+
 SELECT
 	company,
 	campaign_type,
