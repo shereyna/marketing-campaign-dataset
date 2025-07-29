@@ -1,3 +1,6 @@
+-- Calculates average campaign performance metrics (engagement, conversion, ROI, cost, and return) for each company in the dataset.
+-- Used to compare baseline performance across multiple organizations.
+
 SELECT 
 	company,
 	ROUND(AVG(engagement_score), 2) AS avg_engagement,
