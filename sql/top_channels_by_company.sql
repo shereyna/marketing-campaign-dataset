@@ -1,3 +1,7 @@
+-- Calculates average engagement and conversion rate by channel for each company.
+-- Highlights which channels perform best for specific organizations.
+-- Helps optimize channel mix on a per-company basis.
+
 SELECT
 	company,
 	channel_used,
